@@ -59,7 +59,6 @@ Flower Shop Online
 2-3 months
 
 
-
 Prepared by:
   - Ocenar, Aubrey C.
   - Francisco,Johannes
