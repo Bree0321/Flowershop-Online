@@ -7,7 +7,8 @@ Many online flower shops struggle to provide a seamless customer experience, lea
 The goal of this project is to establish a leading online flower shop that offers a diverse selection of high-quality floral arrangements, exceptional customer service, and a convenient online shopping experience. By focusing on reliable delivery, a user-friendly platform, and a wide range of options, we aim to cater to both individual customers and businesses seeking floral arrangements for various occasions.
 
 ## C. Project Objectives
-In creating the Flower Shop Online to help manage and maintain the great features of it, we first develop the Admin and User Dashboard for a separate use of its users. Admin dashboard feature aims to access the shop's products which is to remove, add, and update the items. User dashboard is where the customers login their accounts where they have the access to the shop's items,  whether to buy the item (add to cart) or save them into a wishlist page. 
+In creating the Flower Shop Online to help manage and maintain the great features of it, we first develop the Admin and User Dashboard for a separate use of its users. Admin dashboard feature aims to access the shop's products which is to remove, add, and update the items. User dashboard is where the customers login their accounts where they have the access to the shop's items,  whether to buy the item (add to cart) or save them into a wishlist page. Additionally, customers can leave reviews, check their placed orders, and use a search engine to find products. The Admin dashboard also provides essential tools to manage inventory efficiently by allowing the removal, addition, and updating of products. 
+Key Features:
 
 1. Admin Dashboard
 2. User Dashboard
