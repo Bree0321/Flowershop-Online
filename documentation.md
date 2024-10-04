@@ -20,7 +20,7 @@ In terms of customer care, all communication and assistance will be done via the
 #### 1. Admin Table
 | Column Name     | Data Type      | Constraints                | Description                           |
 |-----------------|-----------------|-----------------------------|---------------------------------------|
-| Id              | INT             | PRIMARY KEY, AUTO_INCREMENT | Unique identifier for each user       |
+| Id              | INT             | AUTO_INCREMENT              | Unique identifier for each user       |
 | First Name      | VARCHAR(50)     | NOT NULL                    | User's first name                     |
 | Middle Name      | VARCHAR(50)     | NULL                        | Optional middle name                 |
 | Last Name       | VARCHAR(50)     | NOT NULL                    | User's last name                      |
