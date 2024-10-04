@@ -21,7 +21,7 @@ In terms of customer care, all communication and assistance will be done via the
 | Column Name     | Data Type      | Constraints                | Description                           |
 |-----------------|-----------------|-----------------------------|---------------------------------------|
 | Id              | INT             | AUTO_INCREMENT              | Unique identifier for each user       |
-| First Name      | VARCHAR(50)     | NOT NULL                    | User's first name                     |
+| name      | VARCHAR(50)     | NOT NULL                    | User's first name                     |
 | Middle Name      | VARCHAR(50)     | NULL                        | Optional middle name                 |
 | Last Name       | VARCHAR(50)     | NOT NULL                    | User's last name                      |
 | Email           | VARCHAR(100)    | UNIQUE, NOT NULL            | Unique email address                  |
