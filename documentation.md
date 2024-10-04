@@ -18,16 +18,73 @@ In terms of customer care, all communication and assistance will be done via the
 ### Data Dictionary
 
 #### 1. Admin Table
-| Column Name     | Data Type      | Constraints                | Description                           |
+| Column Name     | Data Type       | Constraints                 | Description                           |
 |-----------------|-----------------|-----------------------------|---------------------------------------|
 | Id              | INT             | AUTO_INCREMENT              | Unique identifier for each user       |
-| name      | VARCHAR(50)     | NOT NULL                    | User's first name                     |
-| Middle Name      | VARCHAR(50)     | NULL                        | Optional middle name                 |
-| Last Name       | VARCHAR(50)     | NOT NULL                    | User's last name                      |
-| Email           | VARCHAR(100)    | UNIQUE, NOT NULL            | Unique email address                  |
-| Password        | VARCHAR(255)    | NOT NULL                    | Hashed password                       |
-| Role            | ENUM('instructor', 'administrator', 'student') | NOT NULL | Role of the user                      |
-| Registered      | DATETIME        | NOT NULL                    | Timestamp of user registration        |
-| Last Login      | DATETIME        | NULL                        | Timestamp of last user login          |
-| Profile Picture | VARCHAR(255)    | NULL                        | URL of the user's profile picture     |
+| Name            | VARCHAR(50)     | NOT NULL                    | Admin's name                           |
+| Password        | VARCHAR(50)     | NOT NULL                        | User password                         |
 
+#### 2. User Table
+| Column Name     | Data Type       | Constraints                 | Description                           |
+|-----------------|-----------------|-----------------------------|---------------------------------------|
+| Id              | INT             | AUTO_INCREMENT              | Unique identifier for each user       |
+| Name            | VARCHAR(50)     | NOT NULL                    | User's name                           |
+| Email           | VARCHAR(50)     | NOT NULL                        | User's email                          |
+| Password        | VARCHAR(50)     | NOT NULL                        | User password                         |
+
+#### 3. Cart Table
+| Column Name     | Data Type       | Constraints                 | Description                           |
+|-----------------|-----------------|-----------------------------|---------------------------------------|
+| Id              | INT             | AUTO_INCREMENT              | Unique identifier for each user       |
+| User_id         | INT             | NOT NULL                    | User's id                           |
+| Pid             | INT             | NOT NULL                        | Product's Id                                      |
+| Name            | VARCHAR(50)     | NOT NULL                        | User's name                         |
+| Price           | INT             | NOT NULL                        | Product price                         |
+| Quantity        | INT             | NOT NULL                        | Product's quantity                        |
+| Image           | VARCHAR(50)     | NOT NULL                        | Product's image                         |
+
+#### 4. Order Table
+| Column Name     | Data Type       | Constraints                 | Description                           |
+|-----------------|-----------------|-----------------------------|---------------------------------------|
+| Id              | INT             | AUTO_INCREMENT              | Unique identifier for each user       |
+| User_id         | INT             | NOT NULL                    | User's id                           |
+| Name            | VARCHAR(50)     | NOT NULL                        | User's name                                      |
+| Number          | VARCHAR(50)     | NOT NULL                        | User's number                         |
+| Email           | VARCHAR(50)     | NOT NULL                        | User's email                        |
+| Method          | VARCHAR(50)     | NOT NULL                        | Mode of payment                        |
+| Address         | VARCHAR(50)     | NOT NULL                        | User's address                         |
+| Total_products  | VARCHAR(50)     | NOT NULL                        | Quantity of products ordered                       |
+| Total_price     | INT             | NOT NULL                        | Total of ordered item                        |
+| Placed_on       | Date            | NOT NULL                        | Ordered time                        |
+| Payment_status  | VARCHAR(50)     | NOT NULL                        | complete orpending                         |
+
+#### 5. Wishlist Table
+| Column Name     | Data Type       | Constraints                 | Description                           |
+|-----------------|-----------------|-----------------------------|---------------------------------------|
+| Id              | INT             | AUTO_INCREMENT              | Unique identifier for each user       |
+| User_id         | INT             | NOT NULL                    | User's id                           |
+| Pid             | INT             | NOT NULL                        | Product's Id                                      |
+| Name            | VARCHAR(50)     | NOT NULL                        | User's name                         |
+| Price           | INT             | NOT NULL                        | Product price                         |
+| Image           | VARCHAR(50)     | NOT NULL                        | Product's image                         |
+
+#### 6. Product Table
+| Column Name     | Data Type       | Constraints                 | Description                           |
+|-----------------|-----------------|-----------------------------|---------------------------------------|
+| Id              | INT             | AUTO_INCREMENT              | Unique identifier for each user       |
+| Name            | VARCHAR(50)     | NOT NULL                    | User's id                           |
+| Details         | VARCHAR(50)     | NOT NULL                        | Details of the product                                      |
+| Price           | INT             | NOT NULL                        | User's name                         |
+| Image_01           | VARCHAR(100)     | NOT NULL                        | Product's image                         |
+| Image_02           | VARCHAR(100)     | NOT NULL                        | Product's image                         |
+| Image_03           | VARCHAR(100)     | NOT NULL                        | Product's image                         |
+
+#### 7. Messages Table
+| Column Name     | Data Type       | Constraints                 | Description                           |
+|-----------------|-----------------|-----------------------------|---------------------------------------|
+| Id              | INT             | AUTO_INCREMENT              | Unique identifier for each user       |
+| User_id         | INT             | NOT NULL                    | Customer's id                           |
+| Name            | VARCHAR(100)     | NOT NULL                        | Customer's name                         |
+| Email           | VARCHAR(100)     | NOT NULL                        | Customer's email                         |
+| Number          | VARCHAR(100)     | NOT NULL                        | Customer's number                        |
+| Message         | VARCHAR(100)     | NOT NULL                        | Customer's message                        |
